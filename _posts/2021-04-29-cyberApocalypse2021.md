@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: HTB Cyber Apocalypse 2021 - Web
 permalink: cyberApocalypse2021
 date: 2021-04-29
