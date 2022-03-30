@@ -14,7 +14,7 @@ $footer-background-color: #2b2d42 !default; //mix(#000, $background-color, 30%) 
 $link-color: mix($primary-color, $text-color, 40%) !default;
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
-$masthead-link-color: $text-color !default;
+$masthead-link-color: #edf2f4 !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
