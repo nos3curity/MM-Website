@@ -1,4 +1,4 @@
 ---
-layout: splash
+layout: default
 author_profile: false
 ---
