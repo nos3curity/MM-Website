@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: posts
 title: HTB Cyber Apocalypse 2021 - Web
 permalink: cyberApocalypse2021
 date: 2021-04-29
+toc: true
 categories: CTF
 ---
 I've done a few CTF's over the years and HackTheBox's Cyber Apocalypse 2021 definitely was my favorite. 4740 teams of up to 10 people   from all over the globe were unleashed on a huge number of unique challenges and our undergraduate team placed in the top 200, putting us in the top 5% of competitors, which is very impressive considering that the competition wasn't just undergraduate students, but also professionals with industry experience. I was captain for my team and I focused solely on my favorite category - Web.
