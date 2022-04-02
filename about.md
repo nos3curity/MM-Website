@@ -12,14 +12,14 @@ Cybersecurity Commentary, Competitions and Research
 	
 I represent my university at security competitions as the captain of the CPTC team, and a member of the CCDC Linux team. Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
 
-**My Certifications Are:**
+## Certifications
 
 - CompTIA Security+
 - CompTIA Cybersecurity Analyst+
 
 I moved to the US from Russia, so please send all the best Russian hacker jokes my way.
 
-#### My Competition Achievements
+## My Competition Achievements
 <table>
     <tr>
         <td><strong>1st Place</strong></td>
