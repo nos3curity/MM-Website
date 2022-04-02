@@ -7,8 +7,8 @@ title: About Me
 
 Cybersecurity Commentary, Competitions and Research
 	
-**Incoming Associate Red Team Consultant at Mandiant / Cal Poly Pomona Senior Student**
-	
+**Incoming Associate Red Team Consultant / Cal Poly Pomona Senior Student**
+
 I represent my university at security competitions as the captain of the CPTC team, and a member of the CCDC Linux team. Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
 
 ## Certifications
