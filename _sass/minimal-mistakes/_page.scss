@@ -30,6 +30,12 @@ body {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  .page .page__inner-wrap {
+    margin-left: 0;
+  }
+}
+
 .initial-content,
 .search-content {
   flex: 1 0 auto;
