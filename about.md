@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: about
 author_profile: false
 toc: false
 title: About Me
