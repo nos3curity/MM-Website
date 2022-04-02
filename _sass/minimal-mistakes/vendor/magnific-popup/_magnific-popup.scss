@@ -541,9 +541,6 @@ button {
       /**
        * Remove all paddings around the image on small screen
        */
-      .page__inner-wrap {
-        margin-left: 0;
-      }
        .mfp-img-mobile {
         .mfp-image-holder {
           padding-left: 0;
@@ -599,7 +596,11 @@ button {
   }
 }
 
-
+@media only screen and (max-width: 600px) {
+  .page .page__inner-wrap {
+    margin-left: 0;
+  }
+}
 
 // Scale navigation arrows and reduce padding from sides
 @media all and (max-width: 900px) {
