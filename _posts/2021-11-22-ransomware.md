@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Running a Discord Ransomware Gang
 permalink: ransomware
 date: 2021-11-22
