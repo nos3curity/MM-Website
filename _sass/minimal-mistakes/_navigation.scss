@@ -219,6 +219,7 @@
 
   .visible-links {
     display: -webkit-box;
+    margin-right: 80px;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
@@ -333,6 +334,7 @@
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       overflow: visible;
+      margin-right: 80px;
     }
   }
 }
