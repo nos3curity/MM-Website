@@ -1,10 +1,8 @@
 ---
 layout: single
 author_profile: false
-toc: false
+toc: true
 ---
-
-# About Me
 
 Cybersecurity Commentary, Competitions and Research
 	
@@ -14,8 +12,8 @@ I represent my university at security competitions as the captain of the CPTC te
 
 **My Certifications Are:**
 
-- CompTIA Security+</li>
-- CompTIA Cybersecurity Analyst+</li>
+- CompTIA Security+
+- CompTIA Cybersecurity Analyst+
 
 I moved to the US from Russia, so please send all the best Russian hacker jokes my way.
 
@@ -41,5 +39,4 @@ I moved to the US from Russia, so please send all the best Russian hacker jokes 
         <td style="word-wrap: break-word">Global Collegiate Penetration Testing Competition</td>
         <td>2020</td>
     </tr>
-	</table>
-</div>
+</table>
