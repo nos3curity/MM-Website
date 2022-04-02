@@ -9,7 +9,7 @@
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: $muted-text-color;
+  color: #edf2f4; //$muted-text-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
@@ -47,11 +47,13 @@
 }
 
 .page__footer-copyright {
+  margin-left: 100px;
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
 
 .page__footer-follow {
+  margin-left: 100px;
   ul {
     margin: 0;
     padding: 0;
