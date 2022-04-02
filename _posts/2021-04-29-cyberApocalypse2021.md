@@ -3,8 +3,8 @@ title: HTB Cyber Apocalypse 2021 - Web
 permalink: cyberApocalypse2021
 date: 2021-04-29
 categories: CTF
+excerpt: I've done a few CTF's over the years and HackTheBox's Cyber Apocalypse 2021 definitely was my favorite. 4740 teams of up to 10 people from all over the globe were unleashed on a huge number of unique challenges and our undergraduate team placed in the top 200, putting us in the top 5% of competitors, which is very impressive considering that the competition wasn't just undergraduate students, but also professionals with industry experience. I was captain for my team and I focused solely on my favorite category - Web.
 ---
-I've done a few CTF's over the years and HackTheBox's Cyber Apocalypse 2021 definitely was my favorite. 4740 teams of up to 10 people from all over the globe were unleashed on a huge number of unique challenges and our undergraduate team placed in the top 200, putting us in the top 5% of competitors, which is very impressive considering that the competition wasn't just undergraduate students, but also professionals with industry experience. I was captain for my team and I focused solely on my favorite category - Web.
 
 Every challenge in the category was unique in its own way and nearly every single one exposed me to a technique or two that I didn't know or haven't used before. HackTheBox team really went all out this year to produce an awesome experience for everyone and I want to especially commend HTB's [@makelaris](https://twitter.com/makelariss) who developed many of the web challenges and coordinated the category as a whole. The writeup below goes into the details of finding and exploiting the vulnerabilities I found interesting during the CTF, instead of simply sharing the payloads that get you the flag.
 
