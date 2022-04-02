@@ -1,10 +1,10 @@
 ---
 layout: single
 author_profile: false
-toc: true
+toc: false
 ---
 
-# About Me
+## About Me
 
 Cybersecurity Commentary, Competitions and Research
 	
@@ -16,8 +16,6 @@ I represent my university at security competitions as the captain of the CPTC te
 
 - CompTIA Security+
 - CompTIA Cybersecurity Analyst+
-
-I moved to the US from Russia, so please send all the best Russian hacker jokes my way.
 
 ## My Competition Achievements
 <table>
