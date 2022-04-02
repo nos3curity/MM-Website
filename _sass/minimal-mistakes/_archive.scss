@@ -125,6 +125,7 @@
    ========================================================================== */
 
 .list__item {
+  margin-left: 100px;
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
@@ -240,7 +241,7 @@
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border-bottom: 1px solid $border-color;
 
   .archive__item-title {
