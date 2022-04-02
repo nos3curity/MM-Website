@@ -6,3 +6,9 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@media only screen and (max-width: 600px) {
+    .page .page__inner-wrap {
+      margin-left: 0;
+    }
+  }
