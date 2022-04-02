@@ -18,11 +18,13 @@
     max-width: $max-width;
   }
 
-  .about_wrap {
-    //margin-left: 15%;
-    width: 70%;
-    margin: auto;
-  }
+}
+
+.about_wrap {
+  //margin-left: 15%;
+  width: 70%;
+  margin: auto;
+  padding-right: 0;
 }
 
 body {
