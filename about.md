@@ -2,8 +2,9 @@
 layout: single
 author_profile: false
 toc: true
-title: About | NO SECURITY
 ---
+
+# About Me
 
 Cybersecurity Commentary, Competitions and Research
 	
