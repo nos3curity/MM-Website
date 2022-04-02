@@ -17,6 +17,11 @@
   @include breakpoint($x-large) {
     max-width: $max-width;
   }
+
+  .about_wrap {
+    margin-left: 35%;
+    width: 100%;
+  }
 }
 
 body {
@@ -33,10 +38,6 @@ body {
 @media only screen and (max-width: 600px) {
   .page .page__inner-wrap {
     margin-left: 0;
-  }
-  .about_wrap {
-    margin-left: 35%;
-    width: 100%;
   }
 }
 
