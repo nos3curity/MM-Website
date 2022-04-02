@@ -541,7 +541,10 @@ button {
       /**
        * Remove all paddings around the image on small screen
        */
-      .mfp-img-mobile {
+      .page__inner-wrap {
+        margin-left: 0;
+      }
+       .mfp-img-mobile {
         .mfp-image-holder {
           padding-left: 0;
           padding-right: 0;
