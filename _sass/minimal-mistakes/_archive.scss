@@ -125,9 +125,16 @@
    List view
    ========================================================================== */
 
+.archive {
+  .list__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .list__item {
-  //margin-left: 100px;
-  //margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
