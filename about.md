@@ -18,12 +18,6 @@ I represent my university at security competitions as the captain of the CPTC te
 
 ## My Competition Achievements
 
-| 1st Place | Global Collegiate Penetration Testing Competition           | 2022 |
-|-----------|-------------------------------------------------------------|------|
-| 1st Place | Western Regional Collegiate Penetration Testing Competition | 2021 |
-| 2nd Place | Western Regional Collegiate Penetration Testing Competition | 2020 |
-| 3rd Place | Global Collegiate Penetration Testing Competition           | 2021 |
-
 <table>
     <tr>
         <td><strong>1st Place</strong></td>
