@@ -51,6 +51,12 @@
      Post pagination navigation links
      ========================================================================== */
 
+.page__inner-wrap {
+  .pagination {
+    margin-left: 0;
+  }
+}
+
 .pagination {
   @include clearfix();
   float: left;
