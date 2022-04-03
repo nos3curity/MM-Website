@@ -2,7 +2,7 @@
 title: Running a Discord Ransomware Gang
 permalink: ransomware
 date: 2021-11-22
-categories: Competitions
+categories: Malware
 excerpt: Have you ever wanted to build your own ransomware? I hope not. I am however fortunate enough to have an opportunity to be a menace on the red team of the Cal Poly Pomona SWIFT club's Red vs. Blue competition. It's very similar to [CCDC](https://www.nationalccdc.org/) and we've held it for years for talented [Cyber Patriot](https://www.uscyberpatriot.org/) teams from local high schools. For the first time this year we're bringing it to our own school and we've built our own malware to spice things up for the Blue Teams competing. When learning a new programming language, one usually starts with "Hello World", however that ain't no fun, so I decided to learn Go by making Ransomware and things got a little out of hand.
 ---
 
