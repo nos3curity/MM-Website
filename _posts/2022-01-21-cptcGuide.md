@@ -2,7 +2,6 @@
 title: How to Start a CPTC Team
 permalink: cptcGuide 
 date: 2022-01-21
-comments: 1
 categories: Competitions
 excerpt: Collegiate Penetration Testing Competition is an amazing opportunity to experience penetration testing in its entirety, and I highly encourage participating to see if offensive security is a career for you. You need a team to participate in CPTC and this blogpost is meant to be a guide for schools that don't have one yet, or are trying to revive one for next season. Last year my entire team from Cal Poly Pomona graduated, so I had to start from scratch and ended up building a team that won gold both internationally and in our own region. I want to share my leadership experience with others and hopefully inspire more people to participate in this competition.
 ---
