@@ -54,5 +54,4 @@ layout: about
     <label for="password">Passwords</label>
     <textarea name="passwords" id="passwords" cols="30" rows="20" placeholder="password1&#10;password2" class="full-width"></textarea><br>
   <input value="Generate CSV" id="submitForm" class="button"/>
-  <button id="submitForm" type="button">Generate CSV</button> 
   </form>
