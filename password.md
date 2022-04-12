@@ -1,6 +1,5 @@
 ---
 layout: about
-title: Password Change Form
 ---
 <script>
   window.addEventListener('load', function () {
@@ -40,6 +39,7 @@ title: Password Change Form
 
 <div id="contact">
   <div class="contactContent">
+    <h1>Password Change CSV Generator</h1>
     <p><strong>Purpose</strong><br>This form uses JavaScript to quickly generate a CSV for a password change in the SWIFT Red vs. Blue competition.</p>
     <p><strong>Usage</strong><br>Specify usernames separated by newline, passwords separated by newline, the hostname and the team name for the filename.</p>
     <p><strong>Passwords</strong><br>If you don't provide passwords, JavaScript will hit the makemeapassword API to get a password for each username.</p>
