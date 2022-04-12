@@ -39,7 +39,6 @@ title: Password Change Form
 
 
 <div id="contact">
-  <h1 class="pageTitle">RvB Password Change Form</h1>
   <div class="contactContent">
     <p><strong>Purpose</strong><br>This form uses JavaScript to quickly generate a CSV for a password change in the SWIFT Red vs. Blue competition.</p>
     <p><strong>Usage</strong><br>Specify usernames separated by newline, passwords separated by newline, the hostname and the team name for the filename.</p>
