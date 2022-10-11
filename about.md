@@ -5,18 +5,19 @@ toc: false
 title: About Me
 ---
 
-Cybersecurity Commentary, Competitions and Research
+Cybersecurity Certifications, Competitions and Research
 	
-**Incoming Associate Red Team Consultant / Cal Poly Pomona Senior Student**
+**Associate Red Team Consultant at Mandiant**
 
-I represent my university at security competitions as the captain of the CPTC team, and a member of the CCDC Linux team. Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
+I used to represent my university at security competitions as the captain of the CPTC team, and a member of the CCDC Linux team. Nowadays I hack for a living. Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
 
 ## Certifications
 
-- CompTIA Security+
-- CompTIA Cybersecurity Analyst+
+- Offensive Security Certified Professional (OSCP)
+- ~~CompTIA Security+~~ (Expired)
+- ~~CompTIA Cybersecurity Analyst+~~ (Expired)
 
-## My Competition Achievements
+## My University Competition Achievements
 
 <table>
     <tr>
