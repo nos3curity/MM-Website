@@ -13,6 +13,7 @@ I used to represent my university at security competitions as the captain of the
 
 ## Certifications
 
+- Certified Red Team Operator (CRTO)
 - Offensive Security Certified Professional (OSCP)
 - ~~CompTIA Security+~~ (Expired)
 - ~~CompTIA Cybersecurity Analyst+~~ (Expired)
