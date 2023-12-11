@@ -7,14 +7,15 @@ title: About Me
 
 Cybersecurity Certifications, Competitions and Research
 	
-**Associate Red Team Consultant at Google Cloud (Mandiant)**
+**Red Team Consultant at Google**
 
-I used to represent my university at security competitions as the captain of the CPTC team, and a member of the CCDC Linux team. Nowadays I hack for a living. Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
+Cybersecurity is a passion of mine and this blog exists for me to share it with others. 
 
 ## Certifications
 
-- Certified Red Team Operator (CRTO)
+- Offensive Security Experienced Professional (OSEP)
 - Offensive Security Certified Professional (OSCP)
+- Certified Red Team Operator (CRTO)
 - ~~CompTIA Security+~~ (Expired)
 - ~~CompTIA Cybersecurity Analyst+~~ (Expired)
 
